@@ -2,8 +2,8 @@ import React from "react";
 
 function Definition() {
   return (
-    <div className="mt-25 mx-5">
-      <h3 className="text-orange-500 text-2xl my-6 mx-0">Who We Are?</h3>
+    <div className="mt-25 mx-5 sm:mx-0">
+      <h3 className="text-orange-500 text-2xl my-6 ">Who We Are?</h3>
       <p className="text-justify font-medium my-5 leading-7 text-lg">
         BotoFood company was founded in 2009 by Garrett Camp and Travis
         Kalanick.The company began food delivery in August 2014 with the launch

@@ -4,9 +4,7 @@ import Dollar from "../icons/Dollar";
 import Link from "next/link";
 
 function Card({ data }) {
-  console.log(data);
   const { id, name, price, discount, image, details } = data;
-  console.log(discount);
 
   return (
     <div className="flex flex-col w-67.5 shadow-2xl p-3 mb-10 rounded-xl relative">

@@ -1,7 +1,6 @@
 import React from "react";
 import Card from "../modules/Card";
 function MenuPage({ data }) {
-  console.log(data);
 
   return (
     <div className="max-w-4xl mx-auto py-5">

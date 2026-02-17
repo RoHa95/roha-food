@@ -4,7 +4,6 @@ import DetailsPage from "../../components/templates/DetailsPage";
 
 function Details({ data }) {
   const router = useRouter();
-  console.log(data);
 
   if (router.isFallback) {
     return <h2>Loading Page ...</h2>;
@@ -33,10 +32,9 @@ export async function getStaticProps(context) {
   } = context;
   const res = await fetch(`https://food-server-sable.vercel.app/data/${id}`);
   const data = await res.json();
-  console.log(data);
 
   if (!data.id) {
     return { notFound: true };
   }
-  return { props: { data }, revalidate: 10 };
+  return { props: { data }, revalidate: 1*60*60 };
 }
